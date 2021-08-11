@@ -1,0 +1,19 @@
+.details
+{
+    align-items: center;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+   
+    img
+    {
+        height: 400px;
+        width: 350px;
+    }
+    .details__content
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}

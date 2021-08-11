@@ -1,13 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 const CharacterItem = ({ item }) => {
-
+    
     return (
-      <div className='card'>
+      <div className='card' >
         <div className='card-inner'>
           <div className='card-front'>
             <img src={item.img} alt='' />
           </div>
-          <div className='card-back'>
+          <Link className='card-back' to={`/${item.char_id}`}>
             <h1>{item.name}</h1>
             <ul>
               <li>
@@ -23,7 +24,7 @@ const CharacterItem = ({ item }) => {
                 <strong>Status:</strong> {item.status}
               </li>
             </ul>
-          </div>
+          </Link>
         </div>
       </div>
     )

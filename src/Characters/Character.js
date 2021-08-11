@@ -7,8 +7,10 @@ const Character=({isLoading,items})=> {
             {
                 
                 items.map((item)=>(
-                
+                   
+                   
                     <CharacterItem  key={item.char_id} item={item} />
+                  
                     
                 ) )
             }

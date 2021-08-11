@@ -7,17 +7,17 @@ function Homepage() {
     const [items,setItems]=useState(null);
     const[isLoading,SetIsLoading]=useState(true);
     const[query,setQuery]=useState(' ')
+   
     useEffect(() => {
        async function getData()
        {
            const res=await axios.get(`https://www.breakingbadapi.com/api/characters?name=${query}`);
-           console.log(res);
-           console.log(res.data[0].name);
            setItems(res.data);
            SetIsLoading(false)
        }
        getData();
     },[query])
+       
     return (
         <div className="container">
             <Header />
