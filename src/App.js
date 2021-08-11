@@ -1,8 +1,7 @@
 import React from "react";
 import './App.css';
 import Homepage from "./Homepage/Homepage";
-import CharacterDetails from "./CharacterDetails/CharacterDetails";
-import {Switch,Route,Redirect} from "react-router-dom";
+import {Switch,Route} from "react-router-dom";
 import Page from "./Page";
 function App() {
   return (
